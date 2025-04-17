@@ -51,7 +51,7 @@ jobs:
         run: ./github_action_build.sh
 
       - name: Create badge
-        uses: rrmcguinness/lcov_gh_badges@v1.1.2
+        uses: ImBIOS/lcov-coverage-badge@v1
         with:
           file: ./build/raft_cov.info.cleaned
           access_token: ${{ secrets.COVERAGE_TOKEN }}
