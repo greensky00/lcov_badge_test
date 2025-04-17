@@ -396,15 +396,6 @@ if(CODE_COVERAGE GREATER 0)
         strfmt_test
         stat_mgr_test
         raft_server_test
-        snapshot_test
-        leader_election_test
-        new_joiner_test
-        failure_test
-        timer_test
-        asio_service_test
-        req_resp_meta_test
-        stream_transport_layer_test
-        raft_stream_mode_test
     )
 
     # lcov
