@@ -50,8 +50,8 @@ jobs:
         # See https://cmake.org/cmake/help/latest/manual/ctest.1.html for more detail
         run: ./github_action_build.sh
 
-      - name: Code Coverage Metrics
-        uses: rrmcguinness/lcov_gh_badges@v1.1.2
+    steps:
+      - uses: rrmcguinness/lcov_gh_badges@v1.1.2
         file: ./build/raft_cov.info.cleaned
 		access_token: ${{ secrets.COVERAGE_TOKEN }}
 		style: flat
